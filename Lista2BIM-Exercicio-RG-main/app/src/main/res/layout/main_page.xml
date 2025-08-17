@@ -4,65 +4,67 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#C44CAF50">
+    android:background="#FF4A90E2">
 
     <TextView
         android:id="@+id/lblPoupaTempo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="POUPA TEMPO"
-        android:textColor="#FFFFFF"
-        android:textSize="30sp"
+        android:text="VALIDADOR ONLINE"
+        android:textColor="#FFFFFFFF"
+        android:textSize="28sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023" />
+        app:layout_constraintVertical_bias="0.05" />
 
     <ImageView
         android:id="@+id/imageViewRG"
-        android:layout_width="358dp"
-        android:layout_height="174dp"
-        android:layout_marginTop="56dp"
-        android:background="#EEE"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        android:background="#22FFFFFF"
         android:scaleType="fitCenter"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:adjustViewBounds="true"
+        app:layout_constraintDimensionRatio="16:9"
+        app:layout_constraintBottom_toTopOf="@+id/btnSendImage"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lblPoupaTempo"
-        app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/btnSendImage"
-        android:layout_width="108dp"
-        android:layout_height="49dp"
-        android:layout_marginBottom="240dp"
-        android:backgroundTint="#042B06"
-        android:text="ENVIAR"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        android:layout_width="140dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#0F9D58"
+        android:text="CARREGAR"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/imageViewRG"
+        app:layout_constraintBottom_toTopOf="@+id/labelResult"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageViewRG"
-        app:layout_constraintVertical_bias="0.121" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/labelResult"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="#003F3F3F"
-        android:fontFamily="sans-serif"
-        android:text="Aguardando... 🕛"
-        android:textColor="#020202"
-        android:textSize="34sp"
+        android:layout_margin="16dp"
+        android:background="#1A000000"
+        android:padding="12dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Aguardando imagem..."
+        android:textColor="#FFFFFFFF"
+        android:textSize="22sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnSendImage"
-        app:layout_constraintVertical_bias="0.346" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
