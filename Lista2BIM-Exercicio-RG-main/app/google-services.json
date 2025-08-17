@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "255225589895",
+    "project_id": "lista2bim-rg-bruno",
+    "storage_bucket": "lista2bim-rg-bruno.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:255225589895:android:05783acfa5f9aa11164822",
+        "android_client_info": {
+          "package_name": "com.example.lista2bim_rg"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlGaTvwh3Uw7lRbDz8-3lwv0qdv7YB4-Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
